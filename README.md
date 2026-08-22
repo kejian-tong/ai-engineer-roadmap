@@ -84,13 +84,14 @@ A chapter is not done because you finished reading it. It is done when you can:
 5. defend trade-offs;
 6. operate the system safely.
 
-## Sources
+## Source & Credits
 
-Primary inspiration:
-- Andrew Ng — https://www.andrewng.org/writing
-- DeepLearning.AI / The Batch — https://www.deeplearning.ai/the-batch/
+This roadmap is inspired by and builds on **Andrew Ng's 2026 AI Engineering Skills Map**, especially his detailed discussion of **Building and Deploying AI Applications**:
 
-The roadmap also incorporates broader production AI engineering practices including context engineering, RAG evaluation, agent reliability, LLMOps, AI security and coding-agent workflows.
+- **Andrew Ng — original X post (Aug. 21, 2026):** [The AI Engineering Skills Map in Detail: Building and Deploying AI Applications](https://x.com/AndrewYNg/status/2090840747738374568)
+- **DeepLearning.AI / The Batch — detailed article:** [The AI Engineering Skills Map in Detail: Building and Deploying AI Applications](https://charonhub.deeplearning.ai/he-ai-engineering-skills-map-in-detail-building-and-deploying-ai-applications/)
+
+Credit for the original skills-map framing goes to **Andrew Ng and DeepLearning.AI**. This repository is an independent learning roadmap that expands that framework with broader production AI engineering practices, including Context Engineering, RAG evaluation, agent reliability, LLMOps, AI security, coding-agent workflows, portfolio projects and interview preparation. It is not an official DeepLearning.AI curriculum or an endorsement by Andrew Ng.
 
 ## Status
 
