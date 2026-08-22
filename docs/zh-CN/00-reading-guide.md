@@ -65,6 +65,37 @@ flowchart LR
 
 `Resources` 和 `Glossary` 全程查阅。
 
+## 第五遍：Advanced Cross-Cutting Tracks
+
+核心 `00–18` 已经足够覆盖 Andrew Ng Skills Map 的主要结构。下面 6 章属于 **second-layer production depth**：它们不是 Andrew Ng 额外提出的 6 个 headline categories，而是把原框架中横跨多个能力的工程责任进一步显式化。
+
+| Advanced Track | 为什么值得单独学习 | 推荐插入位置 |
+|---|---|---|
+| [Statistics for AI Evals & Experimentation](19-statistics-for-evals-experimentation.md) | 给 EDD 补上 uncertainty、paired comparison、bootstrap、judge calibration、A/B testing | 07 之后 |
+| [AI Data Engineering & Feedback Loops](20-ai-data-engineering.md) | 把 “grounding with data” 从 vector search 扩展到 freshness、lineage、structured data、ACL、trace-to-eval data | 05 之后 |
+| [Model Adaptation & Fine-Tuning](21-model-adaptation-finetuning.md) | 系统学习什么时候该/不该 fine-tune，dataset design、LoRA/PEFT、distillation、held-out eval | 03/09 之后 |
+| [AI System Design Patterns](22-ai-system-design-patterns.md) | 把 router、RAG、workflow、bounded agent、async job、HITL、failure containment 统一成 architecture patterns | 06/08/10 之后 |
+| [Multimodal AI Systems](23-multimodal-ai-systems.md) | 覆盖 PDF、image、chart、OCR、audio/video 与 modality-specific eval | LLM/RAG 基础后 |
+| [AI Governance & Model Risk](24-ai-governance-model-risk.md) | 补 risk classification、ownership、release evidence、auditability、change management、incident response | Security/Production 之后 |
+
+```mermaid
+flowchart LR
+    E[07 Evals] --> ST[19 Statistics]
+    R[05 RAG] --> DE[20 Data Engineering]
+    L[03/09 Model Foundations] --> FT[21 Model Adaptation]
+    A[06/08/10 Systems] --> SD[22 System Design]
+    R --> MM[23 Multimodal]
+    S[13 Security + 08 Production] --> GOV[24 Governance]
+```
+
+你**不需要先把这 6 章全部掌握才能开始申请 AI Engineer**。按照目标岗位选择优先级：
+
+- **Application / Agent Engineer**：19、20、22 优先级最高；
+- **ML-heavy Applied AI**：19、20、21；
+- **Enterprise / Platform AI**：19、20、22、24；
+- **Document / Voice / Vision product**：尽早加入 23；
+- **regulated / high-impact system**：24 属于必须深入的内容。
+
 ## 每周时间分配
 
 建议：
@@ -112,6 +143,7 @@ flowchart LR
 > “Use LangChain + vector DB + GPT.”
 
 那还没有达到 production AI Engineer 的标准。
+
 ---
 
-  [Andrew Ng AI Engineering Skills Map — 详细拆解 →](01-andrew-ng-analysis.md)
+[Andrew Ng AI Engineering Skills Map — 详细拆解 →](01-andrew-ng-analysis.md)
