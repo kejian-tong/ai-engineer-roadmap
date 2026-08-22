@@ -57,6 +57,37 @@ The target is not “I know LangChain” or “I can call an LLM API.” The tar
 
 Use resources and glossary continuously.
 
+## Pass 5 — Advanced cross-cutting tracks
+
+The core 00–18 sequence is enough to understand the main AI Engineering Skills Map. The following chapters add **second-layer production depth**. They are not additional headline categories from Andrew Ng; they make several cross-cutting responsibilities explicit.
+
+| Track | Why it exists | Recommended timing |
+|---|---|---|
+| [Statistics for AI Evals & Experimentation](19-statistics-for-evals-experimentation.md) | Adds uncertainty, paired comparison, bootstrap, judge calibration and online experiments to evaluation-driven development | After chapter 07 |
+| [AI Data Engineering & Feedback Loops](20-ai-data-engineering.md) | Expands “grounding with data” beyond vector search into freshness, lineage, structured data, ACLs and trace-to-eval data | After chapter 05 |
+| [Model Adaptation & Fine-Tuning](21-model-adaptation-finetuning.md) | Teaches when to fine-tune, dataset design, LoRA/PEFT concepts, distillation and held-out evaluation | After chapters 03/09 |
+| [AI System Design Patterns](22-ai-system-design-patterns.md) | Unifies router, RAG, workflow, bounded-agent, async-job, human-approval and failure-containment patterns | After chapters 06/08/10 |
+| [Multimodal AI Systems](23-multimodal-ai-systems.md) | Extends application engineering to PDFs, images, charts, OCR, audio/video and modality-specific evals | After LLM/RAG foundations |
+| [AI Governance & Model Risk](24-ai-governance-model-risk.md) | Adds risk classification, ownership, release evidence, auditability, change management and incident response | After security/production |
+
+```mermaid
+flowchart LR
+    E[07 Evals] --> ST[19 Statistics]
+    R[05 RAG] --> DE[20 Data Engineering]
+    L[03/09 Model Foundations] --> FT[21 Model Adaptation]
+    A[06/08/10 Systems] --> SD[22 System Design]
+    R --> MM[23 Multimodal]
+    S[13 Security + 08 Production] --> GOV[24 Governance]
+```
+
+You do **not** need to master all six before applying for AI Engineer roles. Prioritize by target role:
+
+- application / agent engineer: 19, 20, 22 are highest priority;
+- ML-heavy applied AI: 19, 20, 21;
+- enterprise / platform AI: 19, 20, 22, 24;
+- document / voice / vision products: add 23 early;
+- regulated or high-impact systems: 24 is mandatory depth.
+
 ## Suggested weekly allocation
 
 - **30% learning** — papers, official docs, concepts.
@@ -94,6 +125,7 @@ You are approaching job-readiness when you can whiteboard and implement:
 > “Build an enterprise AI assistant that uses private documents and business tools.”
 
 and proactively cover requirements, model selection, context, retrieval, tools, state, evals, safety, observability, latency, cost, rollout, rollback and feedback loops.
+
 ---
 
-  [Andrew Ng's AI Engineering Skills Map — Detailed Analysis →](01-andrew-ng-analysis.md)
+[Andrew Ng's AI Engineering Skills Map — Detailed Analysis →](01-andrew-ng-analysis.md)
