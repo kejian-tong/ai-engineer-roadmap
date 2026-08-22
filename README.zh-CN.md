@@ -107,14 +107,14 @@ pie showData
 5. defend trade-offs；
 6. operate the system safely。
 
-## Sources
+## 来源与致谢 / Source & Credits
 
-主要框架来源：
+这套 roadmap 的核心 skills-map framing 来源于 **Andrew Ng 2026 年发布的 AI Engineering Skills Map**，尤其是他对 **Building and Deploying AI Applications** 的进一步拆解：
 
-- Andrew Ng — https://www.andrewng.org/writing
-- DeepLearning.AI / The Batch — https://www.deeplearning.ai/the-batch/
+- **Andrew Ng — 原始 X post（2026-08-21）：** [The AI Engineering Skills Map in Detail: Building and Deploying AI Applications](https://x.com/AndrewYNg/status/2090840747738374568)
+- **DeepLearning.AI / The Batch — 对应详细文章：** [The AI Engineering Skills Map in Detail: Building and Deploying AI Applications](https://charonhub.deeplearning.ai/he-ai-engineering-skills-map-in-detail-building-and-deploying-ai-applications/)
 
-此外结合 production AI Engineering 的通用实践，补充了 Context Engineering、RAG Evaluation、Agent Reliability、LLMOps、AI Security、Coding-Agent workflows 等。
+原始 skills-map framework 的 credit 归于 **Andrew Ng 和 DeepLearning.AI**。本仓库是在该框架基础上独立整理和扩展的学习路线，进一步加入了 Context Engineering、RAG Evaluation、Agent Reliability、LLMOps、AI Security、Coding-Agent workflows、Portfolio projects 和 interview preparation 等 production AI Engineering 内容。本仓库不是 DeepLearning.AI 官方课程，也不代表 Andrew Ng 对本仓库全部扩展内容的 endorsement。
 
 ## Status
 
